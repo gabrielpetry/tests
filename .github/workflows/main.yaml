@@ -41,6 +41,20 @@ jobs:
       - clone
     runs-on: ubuntu-latest
     steps:
+      - name: Clone helm chart repository
+        uses: actions/checkout@v3
+        with:
+          submodules: true
+
+
+      - name: Install Task
+        uses: arduino/setup-task@v2
+        with:
+          version: 3.x
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Test things
         run: |
           docker --version
+          ls -la *
+          command -v task
