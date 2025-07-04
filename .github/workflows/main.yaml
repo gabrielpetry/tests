@@ -12,8 +12,8 @@ jobs:
 
   setup-task:
     runs-on: ubuntu-latest
-    steps:
-          
+    steps: 
+      - uses: ./.github/workflows/lib/setup-task.yaml
 
   test-things:
     needs:
