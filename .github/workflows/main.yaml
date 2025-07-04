@@ -31,7 +31,8 @@ jobs:
       - name: Test task
         run: |
           task --version
-          docker --version
+          ls -la 
+          command -v task
 
   test-things:
     needs:
