@@ -1,0 +1,10 @@
+on:
+  workflow_call:
+
+jobs:
+  setup-docker:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup docker
+        uses: docker/setup-docker-action@v4
+        
