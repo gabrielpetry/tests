@@ -8,7 +8,7 @@ jobs:
   clone:
     runs-on: ubuntu-latest
     steps:
-      - uses: ./.github/workflows/lib/clone.yaml
+      - uses: actions/checkout@v3
 
   setup-task:
     runs-on: ubuntu-latest
