@@ -56,5 +56,5 @@ jobs:
       - name: Test things
         run: |
           docker --version
-          ls -la *
+          ls -la 
           command -v task
