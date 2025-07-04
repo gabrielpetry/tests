@@ -28,7 +28,11 @@ jobs:
         with:
           version: 3.x
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-
+      - name: Test task
+        run: |
+          task --version
+          docker --version
+          ls -la .*
 
   test-things:
     needs:
@@ -39,6 +43,5 @@ jobs:
     steps:
       - name: Test things
         run: |
-          task --version
           docker --version
           ls -la .*
