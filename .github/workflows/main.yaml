@@ -32,7 +32,6 @@ jobs:
         run: |
           task --version
           docker --version
-          ls -la .*
 
   test-things:
     needs:
@@ -44,4 +43,3 @@ jobs:
       - name: Test things
         run: |
           docker --version
-          ls -la .*
